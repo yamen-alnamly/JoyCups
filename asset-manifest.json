@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/JoyCups/static/css/main.5cd886ba.css",
-    "main.js": "/JoyCups/static/js/main.45c8acf6.js",
-    "static/js/787.8d9aba66.chunk.js": "/JoyCups/static/js/787.8d9aba66.chunk.js",
+    "main.js": "/JoyCups/static/js/main.e224cf02.js",
+    "static/js/787.4e710f13.chunk.js": "/JoyCups/static/js/787.4e710f13.chunk.js",
     "static/media/MainPageImg2.jpg": "/JoyCups/static/media/MainPageImg2.0cf3eb753d84543e9fc9.jpg",
     "static/media/MainPageImg6.jpg": "/JoyCups/static/media/MainPageImg6.c517cd8ca54f0779fe62.jpg",
     "static/media/MainPageImg3.webp": "/JoyCups/static/media/MainPageImg3.2e129c328e2ecd6561b2.webp",
@@ -24,11 +24,11 @@
     "static/media/Product2.jpg": "/JoyCups/static/media/Product2.40fd81c165c61c5d9306.jpg",
     "index.html": "/JoyCups/index.html",
     "main.5cd886ba.css.map": "/JoyCups/static/css/main.5cd886ba.css.map",
-    "main.45c8acf6.js.map": "/JoyCups/static/js/main.45c8acf6.js.map",
-    "787.8d9aba66.chunk.js.map": "/JoyCups/static/js/787.8d9aba66.chunk.js.map"
+    "main.e224cf02.js.map": "/JoyCups/static/js/main.e224cf02.js.map",
+    "787.4e710f13.chunk.js.map": "/JoyCups/static/js/787.4e710f13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5cd886ba.css",
-    "static/js/main.45c8acf6.js"
+    "static/js/main.e224cf02.js"
   ]
 }
