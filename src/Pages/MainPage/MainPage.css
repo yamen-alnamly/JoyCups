@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+
+:root {
+  --coffee: #dfb78c;
+}
+:root {
+  --PageColor: #f8ebc0;
+}
+.mainPageBody {
+  background-color: var(--PageColor);
+}
+::selection
+{
+  background-color: rgba(252, 154, 74, 0.363);
+}
+.heroPage {
+  width: 90%;
+  height: 85vh;
+  margin: 0 auto;
+  background-color: var(--PageColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+}
+.circleImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 330px;
+  height: 330px;
+  background-color: var(--coffee);
+  position: relative;
+  border-radius: 50%;
+}
+.CoffeeImage {
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+}
+.heroText {
+  width: 60%;
+  margin-top: -50px;
+  color: #5a3d19;
+  animation: fade-in 3s;
+  animation-fill-mode: forwards;
+}
+.heroText h1 {
+  font-size: 4.4rem;
+  font-weight: 900;
+  font-family: fantasy;
+  margin-bottom: -10px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+.heroText p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.mainShopLink {
+  margin-top: 100px;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+.mainShopLink {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../../Images/MainPageImg3.webp);
+}
+.ShopLink {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #241001ce;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ShopLink .shopLinkText {
+  color: var(--PageColor);
+  font-size: 80px;
+  font-weight: 900;
+  font-style: oblique;
+  margin-bottom: 20px;
+}
+.ShopLink .shopLinkButton button {
+  border: none;
+  background-color: var(--PageColor);
+  width: 150px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.ShopLink .shopLinkButton button a {
+  color: #301d07;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.AboutPage {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: #4e2c05d5;
+  padding-bottom: 40px;
+}
+.AboutPageTLine {
+  font-size: 65px;
+  font-weight: 900;
+  color: var(--PageColor);
+  margin: 50px 55px ;
+}
+.AboutPageFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 100px;
+  margin: 0 auto;
+}
+.AboutPageText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.AboutPageText h1 {
+  font-size: 40px;
+  color: #301d07;
+  font-weight: 800;
+  text-shadow: 0 0 2px;
+}
+.AboutPageText p {
+  font-size: 17px;
+  color: var(--coffee);
+  font-weight: 100;
+  text-shadow: 0 0 2px;
+}
+.TrendingPage {
+  width: 100%;
+  height: fit-content;
+  min-height: fit-content;
+}
+.TrendingPageTitle {
+  text-align: center;
+  color: #301d07;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.TrendingPageItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 35px;
+}
+.TrendingItem
+{
+  display: flex;
+  background-color: var(--coffee);
+  padding: 20px;
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: 0 0 3px #301d07;
+  position: relative;
+}
+.TrendingItem::after
+{
+  content: 'HOT';
+  position: absolute;
+  background-color: #a36013;
+  z-index: 900000;
+  font-weight: 900;
+  color: var(--PageColor);
+  padding: 10px 40px ;
+  bottom: -10px;
+  right: -30px;
+  transform: rotate(-30deg);
+}
+.TrendingItemImg img
+{
+  border-radius: 10px;
+}
+.TrendingItemText .TrendingTitle
+{
+  color: #301d07;
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 0 3px;
+  margin-bottom: -15px;
+}
+.TrendingItemText > h5 
+{
+    color: var(--PageColor);
+    text-shadow: 0 0 3px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.TrendingItemText > p 
+{
+  font-size: 1.16rem;
+  margin-top: -10px;
+  color: #301d07;
+  font-weight: 100;
+  text-shadow: 0 0 1px black;
+}
+.TrendingItemText .TrendingPrice 
+{
+  color: var(--PageColor);
+  font-size: 30px;
+  margin-top: -20px;
+  margin-bottom: -1px;
+}
+.TrendingItemText .TrendingButton 
+{
+   border: none;
+   background-color: #301d07;
+   border-radius: 5px;
+   width: 140px;
+   height: 50px;
+   margin-top: 10px ;
+   cursor: pointer;
+
+}
+.TrendingItemText .TrendingButton a 
+{
+  color: var(--PageColor);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 900;
+}
+.MemberShipPage
+{
+  width: 100%;
+  padding: 20px 0;
+  margin: 100px auto;
+  height: fit-content;
+  position: relative;
+}
+.MemberShipPlans
+{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.MebmberShipPlan
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: var(--coffee);
+  border-radius: 10px;
+  box-shadow: 0 0 2px black;
+  color: #301d07;
+}
+.MebmberShipPlan h4 
+{
+  font-size: 35px;
+margin-top: -1px;
+  margin-bottom: -30px;
+  font-weight: 900;
+}
+.MebmberShipPlan .MemberShipPrice
+{
+  font-size: 33px;
+  margin-bottom: -20px;
+  color: var(--PageColor);
+  text-shadow: 0 0 7px #301d07;
+}
+.MebmberShipPlan h5
+{
+  margin-top: -5px;
+  margin-bottom: -10px;
+  font-weight: 900;
+  text-shadow: 0 0 2px black;
+}
+.MebmberShipPlan > p
+{
+  font-size: 19px;
+ font-weight: 100; 
+}
+.MebmberShipPlan .MemberShipButton 
+{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #301d07;
+  color: var(--PageColor);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.MebmberShipPlan.Yearly
+{
+   background-color: #8f4b17ce;
+}
+.MebmberShipPlan.Premium
+{
+  background-color: #5a3d19;
+}
+.ContactPage
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #4e2c05d5;
+  margin-bottom: -100px;
+  padding: 10px 0 40px;
+  text-align: center;
+}
+.ContactPageTitle
+{
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--PageColor);
+}
+.ContactForm
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.ContactFormName
+{
+  display: flex;
+  flex-direction: column;
+}
+.ContactForm label
+{
+   color: var(--PageColor);
+   font-weight: 100;
+   margin-bottom: -10px;
+}
+.ContactForm input
+{
+  margin: 20px auto;
+  text-indent: 10px;
+  outline:  none;
+  width: 55vw;
+  min-width: 200px;
+  padding: 20px 10px;
+  border: none;
+  background-color: var(--PageColor);
+}
+.ContactForm input::placeholder
+{
+  text-indent: 10px;
+  color: #301d07;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+}
+.ContactFormEmail
+{
+  display: flex;
+  flex-direction: column;
+}
+.ContactForm textarea 
+{
+  text-indent: 20px;
+  font-size: 19px;
+  display: block;
+  width: 52vw;
+  background-color: var(--PageColor);
+  resize: none;
+  outline: none;
+  padding: 30px ;
+}
+.ContactForm textarea::placeholder
+{
+  text-indent: 20px;
+  color: #301d07;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+}
+input.ContactSubmit  
+{
+  width: 120px;
+  text-indent: 0;
+  font-size: 17px;
+  background-color: #301d07;
+  color: var(--coffee);
+  border-radius: 10px;
+  height: 50px;
+  line-height: 1px;
+  cursor: pointer;
+  transition: 500ms;
+}
+input.ContactSubmit:hover
+{
+  transform: scale(1.09);
+}
+
+@media (max-width: 1000px) {
+  .TrendingPageItems
+  {
+    flex-direction: column;
+  }
+  .MemberShipPlans
+  {
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .MebmberShipPlan
+  {
+    padding:  30px;
+  }
+}
+@media (max-width: 850px) {
+  .heroPage {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .heroImage {
+    overflow: hidden;
+  }
+  .heroPage h1 {
+    font-size: 58px;
+    text-align: center;
+  }
+  .heroText {
+    width: 85%;
+  }
+  .AboutPage {
+    height: fit-content;
+    text-align: center;
+  }
+  .AboutPageTLine {
+    font-size: 3.4rem;
+    margin: 10px 0;
+  }
+  .AboutPageFlex {
+    flex-direction: column;
+    gap: 0;
+  }
+  .AboutPageText {
+    width: 90%;
+  }
+  .ShopLink .shopLinkText {
+    font-size: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .TrendingItem
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .heroImage
+  {
+     transform: scale(0.9);
+  }
+}

@@ -1,0 +1,189 @@
+:root {
+    --coffee: #dfb78c;
+  }
+  :root {
+    --PageColor: #f8ebc0;
+  }
+  
+.cartBody
+{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    padding: 20px 0;
+    background-color: var(--PageColor);
+}
+.CartItem > img 
+{
+    width: 200px;
+    height: 200px;
+    border: 2px #301d07 solid;
+    border-radius: 10px;
+}
+.cartTitle
+{
+    font-size: 80px;
+    font-weight: 900;
+    color: #301d07 ;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+.cartItems 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 65%;
+}
+.CartItem 
+{
+    
+    width: fit-content;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--coffee);
+    border: 2px #301d07 solid;
+   border-radius: 10px;
+   box-shadow: 0 0 40px var(--coffee);
+}
+.CartItem .CartItemInfo 
+{
+    color: #301d07;
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    width: 40%;
+    justify-content: center;
+    align-items: left;
+}
+.CartItemInfo h1 
+{
+    font-size: 40px;
+    font-weight: 900; 
+   margin-bottom: -20px;
+}
+.CartItemInfo h2 
+{
+    margin-bottom: -12px;
+    font-size: 23px;
+    font-weight: 100;
+}
+.CartItemInfo p 
+{
+    font-size: 15px;
+    font-weight: 100;
+}
+.CartItemButtons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start;
+    margin: 50px 0;
+}
+.CartItemButtons > input 
+{
+    width: 200px;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-indent: 0;
+    outline: none;
+    border: none;
+    background-color: #5c3a13dc;
+    color: var(--PageColor);
+    border-radius: 10px;
+}
+.CartItemButtons .CartItemButton
+{
+    width: 100px;
+    padding: 10px 10px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    background-color: var(--PageColor);
+    color: #301d07;
+     font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+.CartEnd 
+{
+    text-align: center;
+    margin: 100px;
+   
+}
+.CartEnd h1 
+{
+    font-size: 50px;
+    color: #301d07;
+    font-weight: 900;
+}
+.CartEnd button 
+{
+    border: none;
+    padding: 20px;
+    font-size: 19px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    background-color: var(--coffee);
+    color: #301d07;
+    border-radius: 90px;
+}
+.FailPage
+{
+    width: 100%;
+   
+    height: 70vh;
+    font-size: 7vw;
+    font-weight: 900;
+    color: #301d07b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1000px) {
+    .cartBody
+    {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .CartItem
+    {
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 -10px;
+    }
+    .CartItem .CartItemInfo 
+    {
+        width: 250px;
+    }
+    .CartItemButtons
+    {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -10px;
+    }
+}
